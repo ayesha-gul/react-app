@@ -35,14 +35,14 @@ jobs:
      
      
         - name: creating build
-       run: yarn build
+            run: yarn build
        
  
-     - name: installing surge
-     run: npm install -g surge   
+       - name: installing surge
+            run: npm install -g surge   
    
-- name: deploying on surge
-   run: surge ./build http://react-session2.surge.sh/ -- token ${{secrets.PROJECT_TOKEN}}
+      - name: deploying on surge
+                run: surge ./build http://react-session2.surge.sh/ -- token ${{secrets.PROJECT_TOKEN}}
     
 
     
