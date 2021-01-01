@@ -72,4 +72,4 @@ jobs:
       - name: Install Surge
         run: npm install --global surge
       - name: time to deploy 
-        run:surge ./build http://react-session2.surge.sh/ --token ${{secrets.REACT_TOKEN}}
+        run: surge ./build http://react-session2.surge.sh/ --token ${{secrets.REACT_TOKEN}}
